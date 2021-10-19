@@ -1,0 +1,294 @@
+#fondoAnimado {
+  width: 100%;
+  position: absolute;
+  clip-path: inset(0 0 117px 0);
+}
+#persona {
+  animation: animacionPersona 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+@keyframes animacionPersona {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+#maceta {
+  animation: animacionMaceta 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+@keyframes animacionMaceta {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#living {
+  animation: animacionLiving 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+@keyframes animacionLiving {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  10% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+#lampara {
+  animation: animacionLampara 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+@keyframes animacionLampara {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+#fondo {
+  animation: animacionFondo 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+@keyframes animacionFondo {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+}
+#techo {
+  animation: animacionFondo 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease-in;
+}
+@keyframes animacionTecho {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#escritorio {
+  animation: animacionEscritorio 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+
+@keyframes animacionEscritorio {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.st0 {
+  clip-path: url(#SVGID_2_);
+  fill: #175493;
+}
+.st1 {
+  clip-path: url(#SVGID_2_);
+  fill: #0f305b;
+}
+.st2 {
+  clip-path: url(#SVGID_2_);
+  fill: #123d6a;
+}
+.st3 {
+  clip-path: url(#SVGID_2_);
+}
+.st4 {
+  fill: #123d6a;
+}
+.st5 {
+  fill: #497daf;
+}
+.st6 {
+  fill: #081d32;
+}
+.st7 {
+  fill: #175493;
+}
+.st8 {
+  filter: url(#Adobe_OpacityMaskFilter);
+}
+.st9 {
+  filter: url(#Adobe_OpacityMaskFilter_1_);
+}
+.st10 {
+  mask: url(#sombra-lampara_1_);
+  fill: url(#SVGID_3_);
+}
+.st11 {
+  fill: url(#sombra-lampara_2_);
+}
+.st12 {
+  fill: #62daf3;
+}
+.st13 {
+  fill: #0f305b;
+}
+.st14 {
+  fill: #0f1314;
+}
+.st15 {
+  fill: #020c16;
+}
+.st16 {
+  fill: #59a6d1;
+}
+.st17 {
+  fill: #fefefe;
+}
+.st18 {
+  clip-path: url(#SVGID_5_);
+}
+.st19 {
+  fill: url(#SVGID_6_);
+}
+.st20 {
+  fill: url(#SVGID_7_);
+}
+.st21 {
+  fill: url(#SVGID_8_);
+}
+.st22 {
+  fill: #0d2941;
+}
+.st23 {
+  fill: #598ec2;
+}
+.st24 {
+  fill: #ef3e2a;
+}
+.st25 {
+  fill: #792228;
+}
+.st26 {
+  fill: #ffc4c1;
+}
+.st27 {
+  fill: #e39e98;
+}
+.st28 {
+  fill: url(#SVGID_9_);
+}
+.st29 {
+  fill: #f38c16;
+}
+.st30 {
+  fill: #fa5700;
+}
+.st31 {
+  fill: #4277a9;
+}
+
+// edicion de las sombras
+
+#sombra-mesa {
+  animation: encederLuz 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+#sombra-lampara {
+  animation: encederLuz 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+#sombra-armario {
+  animation: encederLuz 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+#sombra-armario-2 {
+  animation: encederLuz 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+#sombra-escritorio {
+  animation: encederLuz 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+#sombra-hoja-1 {
+  animation: encederLuz 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+#sombra-hoja-2 {
+  animation: encederLuz 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+#sombra-hoja-3 {
+  animation: encederLuz 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+#sombra-maceta {
+  animation: encederLuz 3s linear;
+  animation-iteration-count: 1;
+  transition: all 0.3s ease;
+}
+@keyframes encederLuz {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// @media (max-width: 1403px) {
+//   #fondoAnimado {
+//     width: auto;
+//     height: 100vh;
+//   }
+// }
