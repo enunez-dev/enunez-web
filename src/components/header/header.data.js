@@ -9,7 +9,7 @@ export default [
   },
   {
     path: 'portafolio',
-    label: 'Portafóleo',
+    label: 'Portafólio',
   },
   {
     path: 'blog',
