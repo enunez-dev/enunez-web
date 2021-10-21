@@ -1,0 +1,50 @@
+.masthead {
+  hr,
+  svg,
+  p,
+  a {
+    animation: animacionContenido 4s linear;
+    animation-iteration-count: 1;
+    transition: all 0.3s ease;
+  }
+}
+
+@keyframes animacionTitulo {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes animacionSubTitulo {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes animacionContenido {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

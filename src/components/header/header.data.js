@@ -1,10 +1,22 @@
 export default [
   {
-    path: 'home',
-    label: 'Home',
+    path: 'inicio',
+    label: 'Inicio',
   },
   {
-    path: 'about',
-    label: 'About',
+    path: 'conoceme',
+    label: 'Conóceme',
+  },
+  {
+    path: 'portafolio',
+    label: 'Portafóleo',
+  },
+  {
+    path: 'blog',
+    label: 'Blog',
+  },
+  {
+    path: 'contactame',
+    label: 'Contáctame',
   }
 ]

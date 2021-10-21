@@ -4,16 +4,22 @@ import React from 'react';
 import theme from 'theme';
 // import SEO from 'components/seo';
 import Layout from 'components/layout';
-import Home from 'sections/home';
-import About from 'sections/about';
+import Inicio from 'sections/inicio';
+import Conoceme from 'sections/conoceme';
+import Portafolio from 'sections/portafolio';
+import Blog from 'sections/blog';
+import Contactame from 'sections/contactame';
 
 export default function IndexPage() {
   return (
     // <ThemeProvider theme={theme}>
       //<StickyProvider> */}
         <Layout>
-           <Home />
-          <About />
+           <Inicio />
+          <Conoceme />
+          <Portafolio />
+          <Blog />
+          <Contactame />
         </Layout>
       // </StickyProvider> */}
     // </ThemeProvider>
