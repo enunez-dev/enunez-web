@@ -1,6 +1,6 @@
 import React from 'react';
-// import { ThemeProvider } from 'theme-ui';
-// import { StickyProvider } from 'contexts/app/app.provider';
+import { ThemeProvider } from 'theme-ui';
+import { StickyProvider } from 'contexts/app/app.provider';
 import theme from 'theme';
 // import SEO from 'components/seo';
 import Layout from 'components/layout';
@@ -12,8 +12,8 @@ import Contactame from 'sections/contactame';
 
 export default function IndexPage() {
   return (
-    // <ThemeProvider theme={theme}>
-      //<StickyProvider> */}
+    <ThemeProvider theme={theme}>
+      <StickyProvider>
         <Layout>
            <Inicio />
           <Conoceme />
@@ -21,7 +21,7 @@ export default function IndexPage() {
           <Blog />
           <Contactame />
         </Layout>
-      // </StickyProvider> */}
-    // </ThemeProvider>
+      </StickyProvider>
+    </ThemeProvider>
   );
 }

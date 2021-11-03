@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { Box } from 'theme-ui';
-import { Scrollbars } from 'react-custom-scrollbars';
+import { Scrollbars } from 'react-custom-scrollbars-2';
 import Drawer from 'components/drawer';
 import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
@@ -33,14 +33,15 @@ const social = [
 ];
 
 const MobileDrawer = () => {
-  const { state, dispatch } = useContext(DrawerContext);
+  // const { state, dispatch } = useContext(DrawerContext);
+  const [ state, setState ] = useState(false);
 
   // Toggle drawer
-  const toggleHandler = React.useCallback(() => {
-    dispatch({
-      type: 'TOGGLE',
-    });
-  }, [dispatch]);
+  // const toggleHandler = React.useCallback(() => {
+  //   dispatch({
+  //     type: 'TOGGLE',
+  //   });
+  // }, [dispatch]);
 
   return (
     <Drawer
@@ -50,8 +51,8 @@ const MobileDrawer = () => {
           <IoMdMenu size="26px" />
         </Box>
       }
-      open={state.isOpen}
-      toggleHandler={toggleHandler}
+      open={state}
+      toggleHandler={()=>{setState(!state)}}
       closeButton={<IoMdClose size="24px" color="#000000" />}
       drawerStyle={styles.drawer}
       closeBtnStyle={styles.close}

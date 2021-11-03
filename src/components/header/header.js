@@ -6,7 +6,7 @@ import Logo from 'components/logo';
 import LogoDark from 'assets/images/logo-dark.svg';
 import LogoWhite from 'assets/images/logo.svg';
 //import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
-//import MobileDrawer from './mobile-drawer';
+import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 
 export default function Header({ className }) {
@@ -32,7 +32,7 @@ export default function Header({ className }) {
             ))}
           </Flex>
 
-          {/* <MobileDrawer /> */}
+          <MobileDrawer />
         </Container>
       </header>
     //</DrawerProvider>
