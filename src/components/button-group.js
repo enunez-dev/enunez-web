@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { jsx, Box, Container, Flex } from 'theme-ui';
-// import { IoIosArrowRoundBack, IoIosArrowRoundForward } from 'react-icons/io';
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from 'react-icons/io';
 
 export default function ButtonGroup({ next, previous }) {
   return (
@@ -8,10 +8,10 @@ export default function ButtonGroup({ next, previous }) {
       <Container>
         <Box sx={styles.buttonGroup}>
           <button onClick={previous} aria-label="Previous">
-            {/* <IoIosArrowRoundBack /> */}
+            <IoIosArrowRoundBack />
           </button>
           <button onClick={next} aria-label="Next">
-            {/* <IoIosArrowRoundForward /> */}
+            <IoIosArrowRoundForward />
           </button>
         </Box>
       </Container>

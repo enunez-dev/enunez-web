@@ -94,7 +94,7 @@ const styles = {
     justifyContent: 'space-between',
   },
   nav: {
-    mx: 'auto',
+    // mx: 'auto',
     display: 'none',
     '@media screen and (min-width: 1024px)': {
       display: 'block',

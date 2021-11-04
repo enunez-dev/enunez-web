@@ -3,15 +3,16 @@
     width:100%;
     background-color:#fff;
     .container{
+        display: flex;
         .content-perfil{
             display: flex;
             align-items: center;
             width: 50%;            
-        }
-        .perfil{
-            clip-path: circle(50%);
-            width: 350px;
-            height: 350px;
+            .perfil{
+                clip-path: circle(50%);
+                width: 350px;
+                height: 350px;
+            }
         }
         .aboutme{
             width: 50%;
@@ -25,6 +26,40 @@
                 line-height: 2.2;
                 
             }
+        }
+    }
+}
+@media (max-width: 1023px) {
+   .section2{
+       .container{       
+        flex-direction: column;        
+        align-items: center;
+        .content-perfil{
+            justify-content: center;
+            .perfil{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .aboutme{
+            text-align: center;
+            width: 100%;
+            p{
+                text-align: justify;
+            }
+        }
+       }
+   }
+}
+
+@media (max-width: 480px){
+    .section2{
+        .container{  
+         .aboutme{
+            h2{
+                font-size: 32px;
+            }
+         }
         }
     }
 }

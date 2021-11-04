@@ -1,9 +1,13 @@
 .masthead {
-  hr,
   svg,
   p,
   a {
     animation: animacionContenido 4s linear;
+    animation-iteration-count: 1;
+    transition: all 0.3s ease;
+  }
+  hr{
+    animation: animacionLinea 4s linear;
     animation-iteration-count: 1;
     transition: all 0.3s ease;
   }
@@ -46,5 +50,19 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes animacionLinea {
+  0% {
+    opacity: 0;
+    margin-left: 405px;
+  }
+  85% {
+    opacity: 0;
+    margin-left: 405px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 205px;
   }
 }
