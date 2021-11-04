@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'theme-ui';
 import { StickyProvider } from 'contexts/app/app.provider';
 import theme from 'theme';
-// import SEO from 'components/seo';
+import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Inicio from 'sections/inicio';
 import Conoceme from 'sections/conoceme';
@@ -15,7 +15,8 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-           <Inicio />
+          <SEO title="ENUNEZ DIGITAL" />
+          <Inicio />
           <Conoceme />
           <Portafolio />
           <Blog />
