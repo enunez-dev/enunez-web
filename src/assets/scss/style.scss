@@ -2,7 +2,7 @@
 @import 'navbar.scss';
 @import 'header.scss';
 @import 'mouse.scss';
-@import 'section.scss';
+@import 'section1.scss';
 @import 'section2.scss';
 @import 'section3.scss';
 @import 'section4.scss';
@@ -64,7 +64,4 @@ $layout-breakpoint-small: 1023px;
         width: auto;
         height: 100%;
     }
-}
-@media (max-width: 1269px) {
-
 }
