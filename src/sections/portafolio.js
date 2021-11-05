@@ -1,14 +1,13 @@
 
-import { jsx, Container, Heading, Text, Box, Image } from 'theme-ui';
+import { jsx, Container, Heading, Text, Box } from 'theme-ui';
+import Image from 'next/image';
 import SectionHeader from 'components/section-header';
 // import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
 
-import Avatar1 from 'assets/testimonial/avatar1.png';
-import Avatar2 from 'assets/testimonial/avatar2.png';
-import Avatar3 from 'assets/testimonial/avatar3.png';
-import Avatar4 from 'assets/testimonial/avatar4.png';
+import Web1 from 'assets/images/web1.webp';
+import logo from 'assets/images/logo.svg'
 
 const data = [
   {
@@ -16,7 +15,6 @@ const data = [
     title: 'Modern look & trending design',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar1,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
     review: 4,
@@ -26,7 +24,6 @@ const data = [
     title: 'Design Quality & performance',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar2,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
     review: 5,
@@ -36,7 +33,6 @@ const data = [
     title: 'Layout and organized layers',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar3,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
     review: 5,
@@ -46,7 +42,6 @@ const data = [
     title: 'Modern look & trending design',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar4,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
     review: 4,
@@ -85,7 +80,7 @@ export default function TestimonialCard() {
   return (
     <section id="portafolio" sx={{ variant: 'section.portafolio' }}>
       <Container>
-        <SectionHeader slogan="Testimonial" title="Meet Client Satisfaction" />
+        <SectionHeader slogan="Mi" title="Mi portafólio" />
       </Container>
       <Box sx={styles.carouselWrapper}>
         <Carousel
@@ -111,24 +106,12 @@ export default function TestimonialCard() {
           slidesToSlide={1}
         >
           {data.map((item) => (
-            <Box sx={styles.reviewCard} key={`testimonial--key${item.id}`}>
-              {/* <Rating rating={item.review} /> */}
+            <div key={`testimonial--key${item.id}`}>
+              <Image src={Web1} alt="Web 1" className="webs"/>           
               <Heading as="h3" sx={styles.title}>
                 {item.title}
               </Heading>
-              <Text sx={styles.description}>{item.description}</Text>
-              <div className="card-footer">
-                <div className="image">
-                  <Image src={item.avatar} alt="Client Image" />
-                </div>
-                <div className="reviewer-info">
-                  <Heading as="h4" sx={styles.heading}>
-                    {item.name}
-                  </Heading>
-                  <Text sx={styles.designation}>{item.designation}</Text>
-                </div>
-              </div>
-            </Box>
+            </div>
           ))}
         </Carousel>
       </Box>
@@ -185,13 +168,6 @@ const styles = {
     ],
     bg: 'white',
     textAlign: 'left',
-    m: [
-      '28px 5px 30px 5px',
-      '28px 20px 30px 20px',
-      '28px 15px 30px 15px',
-      '28px 15px 30px 15px',
-      '30px 20px 40px',
-    ],
     '&:hover': {
       boxShadow: '0px 6px 47px rgba(38, 78, 118, 0.1)',
     },

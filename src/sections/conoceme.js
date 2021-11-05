@@ -11,7 +11,7 @@ export default function conoceme () {
                     </div>                        
                 </div>
                 <div className='aboutme'>
-                    <h2>Acerca de mi</h2>
+                    <h2>Hola!</h2>
                     <p>
                         Hola! mi nombre es Edward Nuñez, soy desarrollador Full Stack.
                         Me especializo en creaciones de aplicaciones web basado en
