@@ -13,7 +13,7 @@ export default function conoceme () {
                 <div className='aboutme'>
                     <h2>Hola!</h2>
                     <p>
-                        Hola! mi nombre es Edward Nuñez, soy desarrollador Full Stack.
+                        Mi nombre es Edward Nuñez, soy desarrollador Full Stack.
                         Me especializo en creaciones de aplicaciones web basado en
                         principios de diseño UX/UI, me fascina todo lo que aprendo y
                         aplico en cada proyecto que desarrollo. Trabajar con proyectos
