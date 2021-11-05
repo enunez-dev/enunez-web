@@ -9,9 +9,11 @@
             align-items: center;
             width: 50%;            
             .perfil{
-                clip-path: circle(50%);
                 width: 350px;
                 height: 350px;
+                img{
+                    border-radius: 100%;                    
+                }
             }
         }
         .aboutme{
@@ -29,6 +31,7 @@
         }
     }
 }
+
 @media (max-width: 1023px) {
    .section2{
        .container{       

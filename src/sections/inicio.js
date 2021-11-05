@@ -17,7 +17,7 @@ export default function home () {
                         <h1>DEVELOPER</h1>
                         <hr/>
                 </div>
-                <Mouse />
+                <Mouse /> 
                 </header>
             <div className='fondoOscuro'></div>
             <FondoAnimado/>
